@@ -59,14 +59,22 @@ export const Navbar = () => {
                 onClick={() => scrollToSection(item.href)}
                 className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
               >
-                <span className="text-primary font-mono mr-1">0{index + 1}.</span>
                 {item.label}
               </motion.button>
             ))}
-            <Button variant="heroOutline" size="sm" asChild>
-              <a href="/cv-abdelkhabir-shab.pdf" target="_blank" rel="noopener noreferrer">
-                CV
-              </a>
+            <Button 
+              variant="heroOutline" 
+              size="sm"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/CV_Abdelkhabir_Shab_FullStack.pdf';
+                link.download = 'CV_Abdelkhabir_Shab_FullStack.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
+              CV
             </Button>
           </div>
 
@@ -101,14 +109,21 @@ export const Navbar = () => {
                 onClick={() => scrollToSection(item.href)}
                 className="text-lg text-foreground hover:text-primary transition-colors duration-300"
               >
-                <span className="text-primary font-mono mr-2">0{index + 1}.</span>
                 {item.label}
               </motion.button>
             ))}
-            <Button variant="heroOutline" asChild>
-              <a href="/cv-abdelkhabir-shab.pdf" target="_blank" rel="noopener noreferrer">
-                Télécharger CV
-              </a>
+            <Button 
+              variant="heroOutline"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/CV_Abdelkhabir_Shab_FullStack.pdf';
+                link.download = 'CV_Abdelkhabir_Shab_FullStack.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
+              Télécharger CV
             </Button>
           </motion.div>
         )}

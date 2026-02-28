@@ -29,9 +29,10 @@ export const ProjectCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group relative"
+      className={`group relative ${githubLink ? 'cursor-pointer' : ''}`}
+      onClick={() => githubLink && window.open(githubLink, '_blank')}
     >
-      <div className="gradient-border p-6 md:p-8 h-full">
+      <div className="gradient-border p-6 md:p-8 h-full transition-transform duration-300 group-hover:-translate-y-1">
         <div className="flex flex-col h-full">
           {/* Header */}
           <div className="flex items-start justify-between mb-4">
@@ -41,16 +42,9 @@ export const ProjectCard = ({
             </div>
             <div className="flex gap-2">
               {githubLink && (
-                <Button variant="ghost" size="icon" asChild>
+                <Button variant="ghost" size="icon" asChild onClick={(e) => e.stopPropagation()}>
                   <a href={githubLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <Github className="w-5 h-5" />
-                  </a>
-                </Button>
-              )}
-              {demoLink && (
-                <Button variant="ghost" size="icon" asChild>
-                  <a href={demoLink} target="_blank" rel="noopener noreferrer" aria-label="Demo">
-                    <ExternalLink className="w-5 h-5" />
                   </a>
                 </Button>
               )}

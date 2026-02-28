@@ -1,73 +1,119 @@
-# Welcome to your Lovable project
+# Abdelkhabir SHAB - Portfolio
 
-## Project info
+Portfolio professionnel moderne et responsive présentant mes compétences, projets et expériences en développement web.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## À propos
 
-## How can I edit this code?
+Ce portfolio présente mon parcours professionnel, mes compétences techniques et mes réalisations dans le domaine du développement web. Il a été conçu pour offrir une expérience utilisateur fluide et moderne.
 
-There are several ways of editing your application.
+## Fonctionnalités
 
-**Use Lovable**
+- **Design moderne et responsive** - Interface adaptée à tous les écrans
+- **Animations fluides** - Expérience utilisateur enrichie avec Framer Motion
+- **Navigation intuitive** - Parcours simplifié à travers les différentes sections
+- **Formulaire de contact** - Possibilité de me contacter directement
+- **Présentation des projets** - Mise en avant de mes réalisations
+- **Timeline d'expérience** - Parcours professionnel détaillé
+- **Compétences techniques** - Affichage des technologies maîtrisées
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+##  Technologies utilisées
 
-Changes made via Lovable will be committed automatically to this repo.
+Ce projet est développé avec les technologies suivantes :
 
-**Use your preferred IDE**
+- **React 18** - Bibliothèque JavaScript pour l'interface utilisateur
+- **TypeScript** - Typage statique pour une meilleure maintenabilité
+- **Vite** - Outil de build rapide et moderne
+- **Tailwind CSS** - Framework CSS utilitaire
+- **shadcn/ui** - Composants UI de haute qualité
+- **Framer Motion** - Bibliothèque d'animations
+- **React Router** - Routage côté client
+- **React Hook Form** - Gestion des formulaires
+- **Zod** - Validation de schémas
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+##  Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Pour installer et lancer le projet en local :
 
-Follow these steps:
+```bash
+# Cloner le repository
+git clone <VOTRE_URL_GIT>
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Aller dans le dossier du projet
+cd code-canvas
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Installer les dépendances
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Lancer le serveur de développement
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Le projet sera accessible sur `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+##  Scripts disponibles
 
-**Use GitHub Codespaces**
+- `npm run dev` - Lance le serveur de développement
+- `npm run build` - Compile le projet pour la production
+- `npm run preview` - Prévisualise la version de production
+- `npm run lint` - Vérifie le code avec ESLint
+- `npm test` - Lance les tests
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+##  Déploiement
 
-## What technologies are used for this project?
+Le projet peut être déployé sur différentes plateformes :
 
-This project is built with:
+### Vercel (recommandé)
+```bash
+npm run build
+# Déployer le dossier dist sur Vercel
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Netlify
+```bash
+npm run build
+# Déployer le dossier dist sur Netlify
+```
 
-## How can I deploy this project?
+### GitHub Pages
+```bash
+npm run build
+# Déployer le dossier dist sur GitHub Pages
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+##  Structure du projet
 
-## Can I connect a custom domain to my Lovable project?
+```
+code-canvas/
+├── public/          # Fichiers statiques
+├── src/
+│   ├── components/  # Composants React
+│   │   ├── portfolio/  # Composants spécifiques au portfolio
+│   │   └── ui/         # Composants UI réutilisables
+│   ├── hooks/      # Hooks personnalisés
+│   ├── lib/        # Utilitaires
+│   ├── pages/      # Pages de l'application
+│   └── main.tsx    # Point d'entrée
+├── index.html      # Template HTML
+└── package.json    # Dépendances du projet
+```
 
-Yes, you can!
+##  Sections du portfolio
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Accueil** - Présentation et introduction
+- **À propos** - Informations personnelles et parcours
+- **Compétences** - Technologies et outils maîtrisés
+- **Projets** - Réalisations et projets développés
+- **Expérience** - Parcours professionnel
+- **Contact** - Formulaire de contact
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+##  Licence
+
+Ce projet est sous licence personnelle. Tous droits réservés.
+
+##  Contact
+
+Pour toute question ou collaboration, n'hésitez pas à me contacter via le formulaire de contact sur le portfolio ou directement.
+
+---
+
+Développé  par Abdelkhabir SHAB
