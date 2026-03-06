@@ -97,6 +97,22 @@ const projects = {
       githubLink: 'https://github.com/Abdelkhabir6/CAN2025-Predictions',
     },
   ],
+  mobile: [
+    {
+      title: 'Émargement Électronique',
+      description: 'Application mobile moderne permettant la gestion des présences étudiantes par scan de QR Code ou saisie manuelle, avec mode hors-ligne et synchronisation Google Sheets.',
+      technologies: ['Flutter', 'Dart', 'Sqflite', 'mobile_scanner', 'Google Sheets API', 'PDF/Printing'],
+      features: [
+        'Scan QR Code instantané avec mobile_scanner',
+        'Saisie manuelle avec création d\'étudiant (Nom/Email/Filière)',
+        'Mode hors-ligne avec base locale locale (Sqflite) et synchronisation en attente',
+        'Synchronisation automatique et export des détails vers Google Sheets',
+        'Génération et impression de documents PDF',
+      ],
+      duration: '2025',
+      githubLink: 'https://www-apps.univ-lehavre.fr/forge/flutter/login_app',
+    },
+  ],
 };
 
 const experiences = [
@@ -366,7 +382,7 @@ const Index = () => {
             >
               <div className="gradient-border aspect-square rounded-2xl overflow-hidden">
                 <img
-                  src="/profile.png"
+                  src={`${import.meta.env.BASE_URL}profile.png`}
                   alt="Abdelkhabir Shab"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -454,11 +470,12 @@ const Index = () => {
         <div className="container max-w-5xl">
           <SectionTitle number="03" title="Projets" subtitle="Quelques projets sur lesquels j'ai travaillé" />
           <Tabs defaultValue="web" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
+            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 mb-16 lg:mb-8 h-auto gap-2">
               <TabsTrigger value="web">Dev Web</TabsTrigger>
               <TabsTrigger value="blockchain">Blockchain</TabsTrigger>
               <TabsTrigger value="iot">Arduino & IoT</TabsTrigger>
               <TabsTrigger value="ai">IA & Data</TabsTrigger>
+              <TabsTrigger value="mobile">Mobile</TabsTrigger>
             </TabsList>
 
             <TabsContent value="web">
@@ -488,6 +505,14 @@ const Index = () => {
             <TabsContent value="ai">
               <div className="grid md:grid-cols-2 gap-6">
                 {projects.ai.map((project, index) => (
+                  <ProjectCard key={project.title} {...project} index={index} />
+                ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="mobile">
+              <div className="grid md:grid-cols-2 gap-6">
+                {projects.mobile.map((project, index) => (
                   <ProjectCard key={project.title} {...project} index={index} />
                 ))}
               </div>
