@@ -96,6 +96,19 @@ const projects = {
       duration: 'Février 2025',
       githubLink: 'https://github.com/Abdelkhabir6/CAN2025-Predictions',
     },
+    {
+      title: 'Estimation des Niveaux d\'Obésité',
+      description: 'Étude de Machine Learning sur l\'estimation des niveaux d\'obésité basée sur les habitudes alimentaires et l\'état physique (dataset UCI).',
+      technologies: ['Python', 'XGBoost', 'Random Forest', 'Pandas', 'Seaborn', 'Jupyter'],
+      features: [
+        'Analyse Exploratoire des Données (EDA) approfondie des facteurs de santé',
+        'Comparaison de modèles : Random Forest vs XGBoost',
+        'Meilleures performances atteintes avec XGBoost (F1-score ~0.95)',
+        'Analyse via matrice de confusion',
+      ],
+      duration: '2025',
+      githubLink: 'https://github.com/Abdelkhabir6/ObesityLevels',
+    },
   ],
   mobile: [
     {
