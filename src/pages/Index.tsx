@@ -130,6 +130,17 @@ const projects = {
 
 const experiences = [
   {
+    title: 'Stagiaire Développeur – Dosimétrie 3D',
+    company: 'Institut Régional du Cancer de Montpellier (ICM)',
+    duration: 'Avril - Août 2026',
+    description: [
+      'Développement d\'un module d\'intégration de matrices 3D de doses absorbées dans OpenDose3D',
+      'Recalage et superposition de doses multimodales (radiothérapie interne et externe)',
+      'Implémentation des modèles radiobiologiques (BED, EQDx) pour une dosimétrie cumulée au voxel',
+      'Validation clinique du module sur une cohorte de patients',
+    ],
+  },
+  {
     title: 'Développeur Web Full-Stack',
     company: 'Les 1001 Clicks',
     duration: 'Avril - Juillet 2024',
@@ -374,7 +385,7 @@ const Index = () => {
               className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed"
             >
               <p>
-                Actuellement étudiant en Master 2 <strong className="text-foreground">IWOCS</strong> (Ingénierie du Web, des Objets Communicants et des Systèmes Complexes) à l'Université Le Havre Normandie, je combine une solide expérience pratique en <strong className="text-foreground">développement Full-Stack</strong> acquise lors de mes stages avec une formation académique de haut niveau.
+                Étudiant en Master 2 <strong className="text-foreground">IWOCS</strong> (Ingénierie du Web, des Objets Communicants et des Systèmes Complexes) à l'Université Le Havre Normandie, j'effectue actuellement mon <strong className="text-foreground">stage de fin d'études</strong> à l'<strong className="text-foreground">Institut Régional du Cancer de Montpellier (ICM)</strong> au sein du service de Médecine Nucléaire, où je travaille sur le développement d'approches dosimétriques 3D dans le logiciel <strong className="text-foreground">OpenDose3D</strong>.
               </p>
               <p>
                 Ma formation m'a permis de maîtriser un large éventail de technologies allant du <strong className="text-foreground">Web</strong> et <strong className="text-foreground">Mobile</strong> à l'<strong className="text-foreground">Internet des Objets (IoT)</strong>, en intégrant les dimensions critiques de <strong className="text-foreground">Sécurité</strong>, de <strong className="text-foreground">Big Data</strong> et de <strong className="text-foreground">Visualisation de données</strong>.
@@ -384,7 +395,7 @@ const Index = () => {
               </p>
               <div className="flex items-center gap-2 pt-4 text-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>Le Havre, France</span>
+                <span>Montpellier, France</span>
               </div>
             </motion.div>
             <motion.div
