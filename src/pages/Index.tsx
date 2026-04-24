@@ -264,7 +264,7 @@ const Index = () => {
               performantes et scalables. Spécialisé en React, Node.js et IoT.
             </motion.p>
 
-            {/* Stage Banner - Redesigned */}
+            {/* Stage Banner */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -273,7 +273,7 @@ const Index = () => {
             >
               {/* Outer glow ring */}
               <motion.div
-                className="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-blue-500 via-violet-500 to-cyan-500 opacity-70 blur-[2px]"
+                className="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 opacity-70 blur-[2px]"
                 animate={{ opacity: [0.5, 0.9, 0.5] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
               />
@@ -300,17 +300,10 @@ const Index = () => {
 
                 {/* Text */}
                 <div className="flex items-center gap-2 text-sm font-medium">
-                  <span className="text-muted-foreground">Disponible pour un stage</span>
+                  <span className="text-muted-foreground">En stage</span>
                   <span className="text-white/20">·</span>
-                  <span className="font-semibold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                    <TypewriterText
-                      texts={[
-                        "6 mois · Full-Stack JS",
-                        "6 mois · IA & Deep Learning",
-                        "6 mois · IoT & Systèmes",
-                        "6 mois · Blockchain & Solidity",
-                      ]}
-                    />
+                  <span className="font-semibold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+                    ICM Montpellier · Médecine Nucléaire
                   </span>
                 </div>
 
@@ -319,9 +312,9 @@ const Index = () => {
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ delay: 1, type: 'spring' }}
-                  className="flex-shrink-0 px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded-full bg-gradient-to-r from-red-500/80 to-orange-500/80 text-white border border-white/10"
+                  className="flex-shrink-0 px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded-full bg-gradient-to-r from-emerald-500/80 to-teal-500/80 text-white border border-white/10"
                 >
-                  Urgent
+                  Avr – Août 2026
                 </motion.span>
               </div>
             </motion.div>
