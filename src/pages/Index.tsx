@@ -84,6 +84,20 @@ const projects = {
   ],
   ai: [
     {
+      title: 'AdPulse-AI — Data Platform & Copilot',
+      description: 'Plateforme Data Engineering & Activation (MarTech/AdTech) unifiant les données publicitaires multi-canaux (Meta, Google, DSP), avec architecture Medallion, contrôles de qualité et copilote IA pour l\'optimisation budgétaire.',
+      technologies: ['Python', 'DuckDB', 'BigQuery', 'Streamlit', 'Plotly', 'Pydantic', 'Docker', 'SQL'],
+      features: [
+        'Ingestion multi-plateformes (Meta Ads API, Google Ads, DSP, Clickstream)',
+        'Architecture Medallion Data Warehouse (Bronze, Silver, Gold) & modélisation SQL',
+        'Contrôles de qualité automatisés avec Pydantic & détection d\'anomalies/dérive UTM',
+        'Pipelines Reverse ETL & synchronisation d\'audiences via Meta Conversions API',
+        'Dashboard interactif Streamlit & copilote IA de recommandation d\'optimisation budgétaire',
+      ],
+      duration: '2025',
+      githubLink: 'https://github.com/Abdelkhabir6/AdPulse-AI',
+    },
+    {
       title: 'Prédiction CAN 2025 avec MLP',
       description: 'Modèle de Machine Learning (Réseau de Neurones MLP) entraîné sur 204 matchs des 4 dernières éditions de la CAN pour prédire les résultats de la CAN 2025 au Maroc.',
       technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Jupyter Notebook', 'Matplotlib'],

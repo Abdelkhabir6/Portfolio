@@ -35,9 +35,8 @@ export const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'glass py-3' : 'py-6'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass py-3' : 'py-6'
+          }`}
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
           <motion.a
@@ -62,12 +61,12 @@ export const Navbar = () => {
                 {item.label}
               </motion.button>
             ))}
-            <Button 
-              variant="heroOutline" 
+            <Button
+              variant="heroOutline"
               size="sm"
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/CV_Abdelkhabir_Shab_FullStack.pdf';
+                link.href = `${import.meta.env.BASE_URL}CV_Abdelkhabir_Shab_FullStack.pdf`;
                 link.download = 'CV_Abdelkhabir_Shab_FullStack.pdf';
                 document.body.appendChild(link);
                 link.click();
@@ -112,11 +111,11 @@ export const Navbar = () => {
                 {item.label}
               </motion.button>
             ))}
-            <Button 
+            <Button
               variant="heroOutline"
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/CV_Abdelkhabir_Shab_FullStack.pdf';
+                link.href = `${import.meta.env.BASE_URL}CV_Abdelkhabir_Shab_FullStack.pdf`;
                 link.download = 'CV_Abdelkhabir_Shab_FullStack.pdf';
                 document.body.appendChild(link);
                 link.click();
