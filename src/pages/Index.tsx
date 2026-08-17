@@ -411,11 +411,11 @@ const Index = () => {
               viewport={{ once: true }}
               className="relative group"
             >
-              <div className="gradient-border aspect-square rounded-2xl overflow-hidden">
+              <div className="gradient-border aspect-[4/5] rounded-2xl overflow-hidden">
                 <img
                   src={`${import.meta.env.BASE_URL}profile.png`}
                   alt="Abdelkhabir Shab"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </motion.div>
