@@ -94,7 +94,7 @@ const projects = {
         'Pipelines Reverse ETL & synchronisation d\'audiences via Meta Conversions API',
         'Dashboard interactif Streamlit & copilote IA de recommandation d\'optimisation budgétaire',
       ],
-      duration: '2025',
+      duration: '2026',
       githubLink: 'https://github.com/Abdelkhabir6/AdPulse-AI',
     },
     {
