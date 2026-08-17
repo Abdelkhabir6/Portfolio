@@ -208,6 +208,7 @@ const education = [
 ];
 
 const certificates = [
+  { name: 'Machine Learning with Python Professional Certificate', issuer: 'Anaconda & LinkedIn Learning' },
   { name: 'Oracle Database SQL Certified Associate', issuer: 'Oracle' },
   { name: 'Java Programming Certificate', issuer: 'Great Learning Academy' },
   { name: 'EF SET English Certificate', issuer: 'EF Education First' },
